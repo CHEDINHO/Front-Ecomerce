@@ -1,0 +1,107 @@
+/* ===================================
+========= Register Page  */
+.form-container {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+  flex-direction: column;
+  background-color: #f0f4f8; /* Soft neutral background for elegance */
+  background-image: linear-gradient(0deg, #f0f4f8 0%, #e0e7ef 100%); /* Subtle gradient effect */
+  border-radius: 12px; /* Rounded corners for modern design */
+  padding: 40px; /* Padding for the container */
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 50px; /* Enhanced shadow for depth */
+  transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.form-container:hover {
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.form-container form {
+  width: 100%; /* Full width for form */
+  max-width: 400px; /* Limit form width for better readability */
+  background-color: #ffffff; /* White background for the form */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 10px 20px; /* Softer shadow */
+  padding: 30px; /* Padding inside form */
+  transition: box-shadow 0.3s; /* Smooth transition for shadow */
+}
+
+.form-container form:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 15px 30px; /* Darker shadow on hover */
+}
+
+.form-container form .title {
+  text-align: center;
+  margin-bottom: 20px; /* Increased margin for spacing */
+  font-weight: bold;
+  font-family: "Playfair Display", serif;
+  font-size: 28px; /* Larger font size for title */
+  color: #343a40; /* Darker text for better contrast */
+}
+
+.form-container form input {
+  border: none;
+  border-bottom: 2px solid #007bff; /* Thicker border with branding color */
+  border-radius: 0;
+  padding: 12px 10px; /* Added padding for comfort */
+  margin-bottom: 20px; /* Margin below input fields */
+  font-size: 16px; /* Increased font size for input fields */
+  transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition */
+}
+
+.form-container form input:focus {
+  border-color: #0056b3; /* Darker border on focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Glow effect */
+  outline: none; /* Remove default outline */
+}
+
+.form-container form button {
+  border: none;
+  border-radius: 8px; /* More pronounced rounded corners */
+  background-color: #007bff; /* Branding color */
+  color: white;
+  width: 100%; /* Full width button */
+  padding: 14px; /* Increased padding for the button */
+  font-size: 16px; /* Font size for button */
+  font-weight: 600; /* Bold font for button */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Transition effects */
+}
+
+.form-container form button:hover {
+  background: linear-gradient(to right, #0056b3, #004494); /* Darker gradient on hover */
+  transform: translateY(-2px); /* Lift effect on hover */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+.forgot-btn {
+  background-color: transparent; /* Transparent background */
+  color: #007bff; /* Branding color */
+  border: none; /* No border */
+  text-decoration: underline; /* Underlined text for emphasis */
+  margin-top: 10px; /* Margin for spacing */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: color 0.3s; /* Transition effect */
+}
+
+.forgot-btn:hover {
+  color: #0056b3; /* Darker color on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .form-container {
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+
+  .form-container form {
+    padding: 20px; /* Adjust form padding */
+  }
+
+  .form-container form .title {
+    font-size: 24px; /* Adjust title size for smaller screens */
+  }
+}

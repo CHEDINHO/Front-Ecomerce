@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4; /* Light background for contrast */
+  color: #333; /* Default text color */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transitions for themes */
+}
+
+/* Card Container */
+.card-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow cards to wrap */
+  justify-content: center; /* Center the cards */
+  gap: 20px; /* Space between cards */
+  padding: 20px; /* Padding around the container */
+}
+
+/* Card styles */
+.card {
+  background-color: #fff;
+  border-radius: 12px; /* More rounded corners for a modern look */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Deeper shadow for more depth */
+  padding: 20px; /* Increased inner padding for better spacing */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+  width: 250px; /* Fixed width for cards */
+  text-align: center; /* Center text inside the card */
+  cursor: pointer; /* Add pointer cursor on hover */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15); /* Enhance shadow on hover */
+}
+
+.card img {
+  max-width: 100%; /* Responsive images */
+  border-radius: 12px; /* Match card corners */
+  margin-bottom: 15px; /* Space below the image */
+}
+
+.card-title {
+  font-weight: 700;
+  margin: 10px 0; /* Spacing around title */
+  font-size: 1.25em; /* Increase title size */
+  color: #333; /* Title color */
+  transition: color 0.3s ease; /* Smooth transition on hover */
+}
+
+.card:hover .card-title {
+  color: #555; /* Slightly darker color on hover */
+}
+
+/* Footer styles */
+.footer {
+  color: #fff;
+  padding: 30px; /* Increased padding for better spacing */
+  background: linear-gradient(to right, #434343, #000000); /* Gradient for a sleek footer */
+  text-align: center; /* Center text in footer */
+}
+
+.footer a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  transition: color 0.3s, border-bottom 0.3s; /* Smooth link hover effect */
+}
+
+.footer a:hover {
+  color: #ffefba;
+  border-bottom: 1px solid #ffefba;
+}
+
+/* Additional styles (navbar, buttons, etc.) can be further refined */
